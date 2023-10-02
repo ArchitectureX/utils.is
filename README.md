@@ -25,6 +25,7 @@ A utility library for performing various type and value checks on JavaScript ent
 import is from '@architecturex/utils.is'
 
 is([1, 2, 3]).array() // true
+is('hello@architecturex.com').email() // true
 is('hello').string() // true
 is(123).number() // true
 is('').empty() // true
