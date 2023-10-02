@@ -11,7 +11,6 @@ A utility library for performing various type and value checks on JavaScript ent
 ### API
 
 - **array():** Checks if the value is an array.
-- **Base64 Encoding & Decoding:** Convert data between Base64 and other formats.
 - **defined():** Checks if the value is defined and not `null`.
 - **email():** Checks if the value is a valid email address format.
 - **empty():** Checks if the value is empty. This can be an empty string, an empty array, or an object with no enumerable properties.
