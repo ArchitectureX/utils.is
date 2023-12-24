@@ -8,6 +8,10 @@ const is = (value: any) => ({
   email() {
     return /^(?!.*\.\.)[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
   },
+  phone() {
+    const regex = /^\+\d{1,2} (\d{3}-\d{3}-\d{4}|\d{3} \d{3} \d{4})$/;
+    return regex.test(value)
+  },
   empty() {
     if (typeof value === 'string') {
       return value === ''
