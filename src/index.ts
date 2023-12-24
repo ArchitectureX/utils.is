@@ -12,6 +12,10 @@ const is = (value: any) => ({
     const regex = /^\+\d{1,2}( \d{3} \d{3} \d{4}|\d{3}-\d{3}-\d{4}|\d{10})$/
     return regex.test(value)
   },
+  url() {
+    const regex = /^https:\/\/[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/.*)?$/
+    return regex.test(value)
+  },
   empty() {
     if (typeof value === 'string') {
       return value === ''
