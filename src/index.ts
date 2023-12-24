@@ -9,7 +9,7 @@ const is = (value: any) => ({
     return /^(?!.*\.\.)[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
   },
   phone() {
-    const regex = /^\+\d{1,2} (\d{3}-\d{3}-\d{4}|\d{3} \d{3} \d{4})$/;
+    const regex = /^\+\d{1,2}( \d{3} \d{3} \d{4}|\d{3}-\d{3}-\d{4}|\d{10})$/
     return regex.test(value)
   },
   empty() {
