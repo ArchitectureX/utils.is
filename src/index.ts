@@ -2,6 +2,12 @@ const is = (value: any) => ({
   array() {
     return Array.isArray(value)
   },
+  client() {
+    return typeof window !== 'undefined'
+  },
+  server() {
+    return typeof window === 'undefined'
+  },
   defined() {
     return typeof value !== 'undefined' && value !== null
   },
