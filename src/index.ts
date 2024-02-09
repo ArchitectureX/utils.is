@@ -1,4 +1,4 @@
-const is = (value: any) => ({
+const is = (value?: any) => ({
   array() {
     return Array.isArray(value)
   },
